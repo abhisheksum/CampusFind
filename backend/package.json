@@ -1,0 +1,32 @@
+{
+  "name": "smart-campus-lost-and-found-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "db:seed": "node src/scripts/seed.js",
+    "db:verify": "node src/scripts/verify-database.js",
+    "mail:verify": "node src/scripts/verify-mail.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.11.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.7.4",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^10.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
